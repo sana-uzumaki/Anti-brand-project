@@ -19,7 +19,7 @@ import DeepInspectModal from './components/DeepInspectModal';
 import BrandProfileModal from './components/BrandProfileModal';
 import WeightsDrawer from './components/WeightsDrawer';
 
-const API_BASE = '/api';
+const API_BASE = `${import.meta.env.VITE_API_BASE_URL}/api`;
 
 export default function App() {
   const [profiles, setProfiles] = useState([]);
